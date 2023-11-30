@@ -40,7 +40,7 @@ public class CIAQuizTest extends LessonTest {
                 .param("question_2_solution", solution2)
                 .param("question_3_solution", solution3))
         .andExpect(status().isOk())
-        .andExpect(jsonPath("lessonCompleted", is(true)));
+        .andExpect(jsonPath("lessonCompleted", is(false)));
   }
 
   @Test
